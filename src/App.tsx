@@ -1,6 +1,6 @@
 
 import Naver from "./component/Naver"
-
+import Hero from "./component/Hero"
 function App() {
   
 
@@ -8,6 +8,7 @@ function App() {
     <>
     
       <Naver></Naver>
+      <Hero></Hero>
     </>
   )
 }

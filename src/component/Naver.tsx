@@ -1,22 +1,20 @@
 
 import logo from "../assets/logo-text.png";
-// import humber from "../assets/hamburger.png"
+
 import { useState } from "react";
 function Naver(){
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <nav className="grid grid-cols-2 mt-4 sticky top-0 z-50 bg-white border-b border-gray-300 mx-auto max-w-7xl px-6">
+        <nav className="grid grid-cols-2 mt-4 sticky top-0 z-50 bg-white border-b border-gray-300 mx-auto max-w-6xl px-6">
 <button onClick={() =>
      setIsOpen(!isOpen)} className="md:hidden" > 
     ☰
      </button>
-{/* <button className="md:hidden">
-     <img src={humber} alt="Menu" className="h-6 w-6" /> 
-     </button> */}
+
         <img className="absolute left-1/2 w-24 -translate-x-1/2 md:static md:w-30 md:translate-x-0" src={logo} alt="logoImg" />
-        <div className="flex gap-12"> 
+        <div className="flex "> 
             {/* destop */}
-            <ul className=" hidden gap-5 font-semibold text-mauve-500 md:flex">
+            <ul className=" hidden gap-4 font-semibold text-mauve-500 md:flex">
                 <li className="text-pink-500">Home</li>
                 <li>Technologes</li>
                 <li>Project</li>
@@ -33,9 +31,9 @@ function Naver(){
                    <li>Contact</li> 
                    </ul>
                  )}
-            <div className="ml-auto flex item-center gap-2">
-                <button className="m-2">Saign In</button>
-                <button className="bg-pink-500 rounded-full w-24 h-8">Saign Up</button>
+            <div className="ml-auto flex item-center gap-1">
+                <button>Saign In</button>
+                <button className="bg-pink-500 rounded-full w-24 h-8 mt-2 mb-2">Saign Up</button>
             </div>
         </div>
         </nav>
