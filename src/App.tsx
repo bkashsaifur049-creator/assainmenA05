@@ -1,6 +1,7 @@
 
 import Naver from "./component/Naver"
 import Hero from "./component/Hero"
+import TechnologyCard from "./component/type/technologies"
 function App() {
   
 
@@ -9,6 +10,7 @@ function App() {
     
       <Naver></Naver>
       <Hero></Hero>
+      <TechnologyCard></TechnologyCard>
     </>
   )
 }
