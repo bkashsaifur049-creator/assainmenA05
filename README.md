@@ -33,3 +33,36 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+React.js
+TypeScript
+Tailwind CSS
+Vite
+## 📚 React Questions and Answers
+
+### 1. What is JSX, and why is it used in React?
+
+JSX lets us write HTML-like code inside JavaScript to build UI easily.
+
+### 2. What is the difference between props and state?
+
+Props pass data between components. State stores data that can change over time.
+
+### 3. What does the useState hook do, and where did you use it?
+
+useState manages changing data. I used it to manage technologies, the selected stack, and loading state.
+
+### 4. What does the useEffect hook do, and why did you need it?
+
+useEffect handles side effects. I used it to fetch technology data from the JSON file.
+
+### 5. Why does every item in a .map() list need a unique key prop?
+
+A unique key helps React identify each item when the list changes.
+
+### 6. What is conditional rendering? Show one place you used it.
+
+Conditional rendering displays UI based on a condition. I used it to show a message when the stack is empty.
+
+### 7. How do you pass data from a parent component to a child component, and how does a child send something back?
+
+The parent passes data using props. The child can call a callback function passed by the parent to send information back.
