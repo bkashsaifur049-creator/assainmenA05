@@ -38,9 +38,9 @@ const Fotter = () => {
             </div>
             <div className="h-px w-280 mt-30 bg-gray-300"></div>
             </div>
-            {/* <p className="text-1xl items-center ml-25 mb-5 text-gray-500">
+            <p className="text-1xl items-center ml-25 mb-5 text-gray-500">
       © 2026 Dev Stack. All rights reserved.
-    </p> */}
+    </p>
         </div>
     );
 };
