@@ -1,4 +1,4 @@
-interface technologyType{
+export interface technologyType{
     id : string ;
   name : string ;
 category: string;

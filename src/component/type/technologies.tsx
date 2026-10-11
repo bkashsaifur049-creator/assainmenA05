@@ -1,10 +1,10 @@
 
 import { useEffect, useState } from "react";
-import type { Technology } from "./typeData";
+import type { technologyType } from "../typeData";
 
 function TechnologyCard() {
-  const [technologies, setTechnologies] = useState<Technology[]>([]);
-  const [selected, setSelected] = useState<Technology[]>([]);
+  const [technologies, setTechnologies] = useState<technologyType[]>([]);
+  const [selected, setSelected] = useState<technologyType[]>([]);
 
   useEffect(() => {
     fetch("/data.json")
@@ -12,12 +12,12 @@ function TechnologyCard() {
         if (!res.ok) throw new Error("Failed to load data");
         return res.json();
       })
-      .then((data: Technology[]) => setTechnologies(data))
+      .then((data: technologyType[]) => setTechnologies(data))
       .catch((error) => console.error(error));
   }, []);
 
   // Add or remove technology
-  const toggleStack = (tech: Technology) => {
+  const toggleStack = (tech: technologyType) => {
     setSelected((prev) =>
       prev.some((item) => item.id === tech.id)
         ? prev.filter((item) => item.id !== tech.id)
@@ -39,7 +39,7 @@ function TechnologyCard() {
     <section className="min-h-screen bg-white px-5 py-10 text-slate-900 md:px-10 lg:px-16">
       <h1 className="text-3xl font-extrabold">
         Explore the{" "}
-        <span className="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+        <span className="bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
           Technologies
         </span>
       </h1>
@@ -161,6 +161,7 @@ function TechnologyCard() {
           </button>
         </aside>
       </div>
+      <div className="h-px w-280 mt-30 bg-gray-300"></div>
     </section>
   );
 }
